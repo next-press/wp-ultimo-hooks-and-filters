@@ -1,3 +1,56 @@
+### wp_ultimo_woocommerce_activation
+
+Let other parts of the plugin attach their routines for activation.
+
+Added in 1.9.6
+
+```php
+do_action("wp_ultimo_woocommerce_activation")
+```
+
+Location: inc/class-hooks.php:84
+
+#### Arguments
+*None.*
+
+---
+### wp_ultimo_woocommerce_deactivation
+
+Let other parts of the plugin attach their routines for deactivation.
+
+Added in 1.9.6
+
+```php
+do_action("wp_ultimo_woocommerce_deactivation")
+```
+
+Location: inc/class-hooks.php:103
+
+#### Arguments
+*None.*
+
+---
+### wp_ultimo_skip_network_active_check
+
+Allow for developers to short-circuit the network activation check.
+
+This is useful when using composer-based and other custom setups, such as Bedrock, for example, where using plugins as mu-plugins are the norm.
+
+Added in 2.0.0
+
+```php
+apply_filters("wp_ultimo_skip_network_active_check", bool $skip_network_activation_check)
+```
+
+Location: inc/class-requirements.php:302
+
+#### Arguments
+* `$skip_network_activation_check` (_bool_) If we should skip the check or not, defaults to false.
+
+#### Expected Return
+(_bool_) true if you wish to skip the check, false otherwise.
+
+---
 ### wp_ultimo_woocommerce_load
 
 Triggers after all the add-on dependencies were loaded.
@@ -78,57 +131,4 @@ Location: inc/gateways/class-woocommerce-gateway.php:436
 
 #### Expected Return
 (_array_) The modified line item parameters.
-
----
-### wp_ultimo_skip_network_active_check
-
-Allow for developers to short-circuit the network activation check.
-
-This is useful when using composer-based and other custom setups, such as Bedrock, for example, where using plugins as mu-plugins are the norm.
-
-Added in 2.0.0
-
-```php
-apply_filters("wp_ultimo_skip_network_active_check", bool $skip_network_activation_check)
-```
-
-Location: inc/class-requirements.php:302
-
-#### Arguments
-* `$skip_network_activation_check` (_bool_) If we should skip the check or not, defaults to false.
-
-#### Expected Return
-(_bool_) true if you wish to skip the check, false otherwise.
-
----
-### wp_ultimo_woocommerce_activation
-
-Let other parts of the plugin attach their routines for activation.
-
-Added in 1.9.6
-
-```php
-do_action("wp_ultimo_woocommerce_activation")
-```
-
-Location: inc/class-hooks.php:84
-
-#### Arguments
-*None.*
-
----
-### wp_ultimo_woocommerce_deactivation
-
-Let other parts of the plugin attach their routines for deactivation.
-
-Added in 1.9.6
-
-```php
-do_action("wp_ultimo_woocommerce_deactivation")
-```
-
-Location: inc/class-hooks.php:103
-
-#### Arguments
-*None.*
 
