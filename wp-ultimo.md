@@ -81,7 +81,7 @@ Location: inc/objects/class-billing-address.php:334
 apply_filters("wu_limit_classes")
 ```
 
-Location: inc/objects/class-limitations.php:417
+Location: inc/objects/class-limitations.php:418
 
 ---
 ### wu_note_get_{$name}
@@ -287,7 +287,7 @@ Location: inc/models/class-product.php:1148
 apply_filters("wu_get_as_variation_price_variation")
 ```
 
-Location: inc/models/class-product.php:1337
+Location: inc/models/class-product.php:1332
 
 ---
 ### wu_product_get_price_variation
@@ -298,7 +298,7 @@ Location: inc/models/class-product.php:1337
 apply_filters("wu_product_get_price_variation")
 ```
 
-Location: inc/models/class-product.php:1421
+Location: inc/models/class-product.php:1416
 
 ---
 ### save_post_wpultimo_plan
@@ -311,7 +311,7 @@ Deprecated in 2.0.0 **
 do_action("save_post_wpultimo_plan")
 ```
 
-Location: inc/models/class-product.php:1450
+Location: inc/models/class-product.php:1445
 
 ---
 ### wu_save_plan
@@ -324,7 +324,7 @@ Deprecated in 2.0.0 *Use 'wu_product_post_save' instead.*
 do_action("wu_save_plan")
 ```
 
-Location: inc/models/class-product.php:1458
+Location: inc/models/class-product.php:1453
 
 ---
 ### wu_is_online_minutes_interval
@@ -379,7 +379,7 @@ Add Checkout step
 apply_filters("wu_checkout_form_membership_change_form_fields")
 ```
 
-Location: inc/models/class-checkout-form.php:1279
+Location: inc/models/class-checkout-form.php:1285
 
 ---
 ### wu_site_is_customer_allowed
@@ -453,7 +453,7 @@ Added in 2.0.0
 do_action("wu_model_post_save", array $model, array $data, array $data_unserialized, \WP_Ultimo\Models\Base_Model $this, array $new)
 ```
 
-Location: inc/models/class-site.php:1838
+Location: inc/models/class-site.php:1844
 
 #### Arguments
 * `$model` (_array_) The model slug.
@@ -473,7 +473,7 @@ Added in 2.0.0
 do_action("wu_{$this->model}_post_save", array $data, \WP_Ultimo\Models\Base_Model $this, array $new)
 ```
 
-Location: inc/models/class-site.php:1849
+Location: inc/models/class-site.php:1855
 
 #### Arguments
 * `$data` (_array_) The object data that will be stored.
@@ -614,7 +614,7 @@ Location: inc/models/class-post-base-model.php:323
 apply_filters("wu_membership_is_customer_allowed")
 ```
 
-Location: inc/models/class-membership.php:373
+Location: inc/models/class-membership.php:407
 
 ---
 ### wu_membership_delete_scheduled_swap
@@ -625,7 +625,7 @@ We only care about products.
 do_action("wu_membership_delete_scheduled_swap")
 ```
 
-Location: inc/models/class-membership.php:788
+Location: inc/models/class-membership.php:822
 
 ---
 ### wu_membership_calculated_date_expiration
@@ -638,7 +638,7 @@ Added in 2.0
 apply_filters("wu_membership_calculated_date_expiration", string $expiration, int $membership_id, \WP_Ultimo\Models\Membership $this)
 ```
 
-Location: inc/models/class-membership.php:1268
+Location: inc/models/class-membership.php:1302
 
 #### Arguments
 * `$expiration` (_string_) Calculated expiration date in MySQL format.
@@ -654,7 +654,7 @@ Location: inc/models/class-membership.php:1268
 apply_filters("wu_membership_is_active")
 ```
 
-Location: inc/models/class-membership.php:1479
+Location: inc/models/class-membership.php:1513
 
 ---
 ### wu_before_pending_site_published
@@ -665,7 +665,7 @@ Location: inc/models/class-membership.php:1479
 do_action("wu_before_pending_site_published")
 ```
 
-Location: inc/models/class-membership.php:1847
+Location: inc/models/class-membership.php:1881
 
 ---
 ### wu_pending_site_published
@@ -676,7 +676,7 @@ Location: inc/models/class-membership.php:1847
 do_action("wu_pending_site_published")
 ```
 
-Location: inc/models/class-membership.php:1872
+Location: inc/models/class-membership.php:1906
 
 ---
 ### wu_membership_renewal_expiration_date
@@ -689,7 +689,7 @@ Added in 2.0.0
 apply_filters("wu_membership_renewal_expiration_date", string $expiration, \WP_Ultimo\Models\Product $plan, int $membership_id, \WP_Ultimo\Models\Membership $this)
 ```
 
-Location: inc/models/class-membership.php:2045
+Location: inc/models/class-membership.php:2079
 
 #### Arguments
 * `$expiration` (_string_) Calculated expiration date.
@@ -708,7 +708,7 @@ Added in 2.0
 do_action("wu_membership_pre_renew", string $expiration, int $membership_id, \WP_Ultimo\Models\Membership $this)
 ```
 
-Location: inc/models/class-membership.php:2058
+Location: inc/models/class-membership.php:2092
 
 #### Arguments
 * `$expiration` (_string_) New expiration date to be set.
@@ -726,7 +726,7 @@ Added in 2.0
 do_action("wu_membership_post_renew", string $expiration, int $membership_id, \WP_Ultimo\Models\Membership $this)
 ```
 
-Location: inc/models/class-membership.php:2095
+Location: inc/models/class-membership.php:2129
 
 #### Arguments
 * `$expiration` (_string_) New expiration date to be set.
@@ -744,7 +744,7 @@ Added in 2.0
 do_action("wu_membership_pre_cancel", int $membership_id, \WP_Ultimo\Models\Membership $this)
 ```
 
-Location: inc/models/class-membership.php:2128
+Location: inc/models/class-membership.php:2162
 
 #### Arguments
 * `$membership_id` (_int_) The ID of the membership.
@@ -763,7 +763,7 @@ Added in 2.0
 do_action("wu_membership_post_cancel", int $membership_id, \WP_Ultimo\Models\Membership $this)
 ```
 
-Location: inc/models/class-membership.php:2147
+Location: inc/models/class-membership.php:2181
 
 #### Arguments
 * `$membership_id` (_int_) The ID of the membership.
@@ -5184,7 +5184,7 @@ Added in 2.0.5
 do_action("wp_ultimo_admin_pages")
 ```
 
-Location: inc/class-wp-ultimo.php:743
+Location: inc/class-wp-ultimo.php:748
 
 #### Arguments
 *None.*
