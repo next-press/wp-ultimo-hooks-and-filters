@@ -1303,6 +1303,17 @@ Location: inc/domain-mapping/class-sso.php:82
 * `$enabled` (_bool_) Should SSO be enabled? (True for on, false-ish for off.)
 
 ---
+### wu_sso_use_lax_mode
+
+*No description provided.*
+
+```php
+apply_filters("wu_sso_use_lax_mode")
+```
+
+Location: inc/domain-mapping/class-sso.php:130
+
+---
 ### wu_sso_loaded
 
 Allow plugin developers to add additional hooks, if needed.
@@ -1315,7 +1326,7 @@ Added in 2.0.0
 do_action("wu_sso_loaded", self $this)
 ```
 
-Location: inc/domain-mapping/class-sso.php:162
+Location: inc/domain-mapping/class-sso.php:174
 
 #### Arguments
 * `$this` (_self_) The SSO class.
@@ -1329,7 +1340,7 @@ Location: inc/domain-mapping/class-sso.php:162
 do_action("wu_sso_loaded_on_init")
 ```
 
-Location: inc/domain-mapping/class-sso.php:166
+Location: inc/domain-mapping/class-sso.php:178
 
 ---
 ### wu_sso_main_domain_network
@@ -1342,7 +1353,7 @@ For multi-network sites, this allows using only the main network rather than net
 apply_filters("wu_sso_main_domain_network", \WP_Ultimo\Domain_Mapping\stdClass $network, string $domain, \WP_Ultimo\Domain_Mapping\stdClass|null $supplied_network)
 ```
 
-Location: inc/domain-mapping/class-sso.php:265
+Location: inc/domain-mapping/class-sso.php:277
 
 #### Arguments
 * `$network` (_\WP_Ultimo\Domain_Mapping\stdClass_) Network object to be used
@@ -1358,7 +1369,7 @@ Is this domain the main domain?
 apply_filters("wu_sso_is_main_domain", boolean $is_main, string $domain, \WP_Ultimo\Domain_Mapping\stdClass $network)
 ```
 
-Location: inc/domain-mapping/class-sso.php:308
+Location: inc/domain-mapping/class-sso.php:320
 
 #### Arguments
 * `$is_main` (_boolean_) Is this the main domain?
@@ -1374,7 +1385,7 @@ Location: inc/domain-mapping/class-sso.php:308
 apply_filters("wu_sso_action_url")
 ```
 
-Location: inc/domain-mapping/class-sso.php:371
+Location: inc/domain-mapping/class-sso.php:383
 
 ---
 ### wu_sso_login_url
@@ -1385,7 +1396,7 @@ Location: inc/domain-mapping/class-sso.php:371
 apply_filters("wu_sso_login_url")
 ```
 
-Location: inc/domain-mapping/class-sso.php:746
+Location: inc/domain-mapping/class-sso.php:764
 
 ---
 ### wu_sso_expiration
@@ -1396,7 +1407,7 @@ How long should the SSO tokens last?
 apply_filters("wu_sso_expiration", int $duration)
 ```
 
-Location: inc/domain-mapping/class-sso.php:818
+Location: inc/domain-mapping/class-sso.php:836
 
 #### Arguments
 * `$duration` (_int_) Session duration in seconds
