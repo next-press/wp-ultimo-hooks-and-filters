@@ -1,3 +1,21 @@
+### wp_ultimo_support_agents_load
+
+Triggers when all the dependencies were loaded
+
+Allows plugin developers to add new functionality. For example, support to new Hosting providers, etc.
+
+Added in 1.0.0
+
+```php
+do_action("wp_ultimo_support_agents_load")
+```
+
+Location: inc/class-wp-ultimo-support-agents.php:111
+
+#### Arguments
+*None.*
+
+---
 ### wp_ultimo_support_agents_activation
 
 Let other parts of the plugin attach their routines for activation
@@ -36,28 +54,6 @@ Location: inc/class-hooks.php:105
 (_void_) No description provided.
 
 ---
-### wp_ultimo_support_agents_registered_capabilities
-
-*No description provided.*
-
-```php
-apply_filters("wp_ultimo_support_agents_registered_capabilities")
-```
-
-Location: inc/class-permission-control.php:562
-
----
-### wp_ultimo_support_agents_registered_default_wordpress_capabilities
-
-*No description provided.*
-
-```php
-apply_filters("wp_ultimo_support_agents_registered_default_wordpress_capabilities")
-```
-
-Location: inc/class-permission-control.php:918
-
----
 ### wp_ultimo_skip_network_active_check
 
 Allow for developers to short-circuit this check.
@@ -77,24 +73,6 @@ Location: inc/class-requirements.php:250
 
 #### Expected Return
 (_bool_) No description provided.
-
----
-### wp_ultimo_support_agents_load
-
-Triggers when all the dependencies were loaded
-
-Allows plugin developers to add new functionality. For example, support to new Hosting providers, etc.
-
-Added in 1.0.0
-
-```php
-do_action("wp_ultimo_support_agents_load")
-```
-
-Location: inc/class-wp-ultimo-support-agents.php:111
-
-#### Arguments
-*None.*
 
 ---
 ### wu_support_agents_url
@@ -128,4 +106,26 @@ apply_filters("wp_ultimo_support_agents_get_option")
 ```
 
 Location: inc/class-helper.php:232
+
+---
+### wp_ultimo_support_agents_registered_capabilities
+
+*No description provided.*
+
+```php
+apply_filters("wp_ultimo_support_agents_registered_capabilities")
+```
+
+Location: inc/class-permission-control.php:580
+
+---
+### wp_ultimo_support_agents_registered_default_wordpress_capabilities
+
+*No description provided.*
+
+```php
+apply_filters("wp_ultimo_support_agents_registered_default_wordpress_capabilities")
+```
+
+Location: inc/class-permission-control.php:936
 
