@@ -453,7 +453,7 @@ Added in 2.0.0
 do_action("wu_model_post_save", array $model, array $data, array $data_unserialized, \WP_Ultimo\Models\Base_Model $this, array $new)
 ```
 
-Location: inc/models/class-site.php:1837
+Location: inc/models/class-site.php:1838
 
 #### Arguments
 * `$model` (_array_) The model slug.
@@ -473,7 +473,7 @@ Added in 2.0.0
 do_action("wu_{$this->model}_post_save", array $data, \WP_Ultimo\Models\Base_Model $this, array $new)
 ```
 
-Location: inc/models/class-site.php:1848
+Location: inc/models/class-site.php:1849
 
 #### Arguments
 * `$data` (_array_) The object data that will be stored.
