@@ -1412,7 +1412,7 @@ Added in 2.0.0
 apply_filters("wu_should_redirect_to_primary_domain", $should_redirect)
 ```
 
-Location: inc/domain-mapping/class-primary-domain.php:79
+Location: inc/domain-mapping/class-primary-domain.php:85
 
 #### Arguments
 * `$should_redirect` (__) If we should redirect or not.
