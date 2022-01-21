@@ -3567,7 +3567,7 @@ Added in 2.0.4
 apply_filters("wu_checkout_template_id")
 ```
 
-Location: inc/checkout/class-checkout.php:1285
+Location: inc/checkout/class-checkout.php:1290
 
 #### Arguments
 *None.*
@@ -3585,7 +3585,7 @@ Added in 2.0.0
 apply_filters("wu_get_checkout_variables", array $variables, \WP_Ultimo\Checkout\Checkout $this)
 ```
 
-Location: inc/checkout/class-checkout.php:1621
+Location: inc/checkout/class-checkout.php:1626
 
 #### Arguments
 * `$variables` (_array_) Localized variables.
@@ -3603,7 +3603,7 @@ Location: inc/checkout/class-checkout.php:1621
 apply_filters("wu_checkout_validation_rules")
 ```
 
-Location: inc/checkout/class-checkout.php:1665
+Location: inc/checkout/class-checkout.php:1670
 
 ---
 ### wu_checkout_done
@@ -3614,7 +3614,7 @@ Add the additional required fields.
 do_action("wu_checkout_done")
 ```
 
-Location: inc/checkout/class-checkout.php:2042
+Location: inc/checkout/class-checkout.php:2047
 
 ---
 ### wp_ultimo_registration
@@ -3627,7 +3627,7 @@ Deprecated in 2.0.0 **
 do_action("wp_ultimo_registration")
 ```
 
-Location: inc/checkout/class-checkout.php:2060
+Location: inc/checkout/class-checkout.php:2065
 
 ---
 ### wp_ultimo_redirect_url_after_signup
@@ -3642,7 +3642,7 @@ Added in 1.1.3
 apply_filters("wp_ultimo_redirect_url_after_signup")
 ```
 
-Location: inc/checkout/class-checkout.php:2101
+Location: inc/checkout/class-checkout.php:2106
 
 #### Arguments
 *None.*
@@ -3656,7 +3656,7 @@ Location: inc/checkout/class-checkout.php:2101
 apply_filters("wu_checkout_custom_css")
 ```
 
-Location: inc/checkout/class-checkout.php:2205
+Location: inc/checkout/class-checkout.php:2210
 
 ---
 ### wu_maybe_redirect_to_admin_panel_exclusion_list
@@ -3914,7 +3914,7 @@ No tax category, bail.
 apply_filters("wu_cart_applicable_tax_rates")
 ```
 
-Location: inc/checkout/class-cart.php:2173
+Location: inc/checkout/class-cart.php:2180
 
 ---
 ### wu_cart_get_extra_params
@@ -3925,7 +3925,7 @@ Location: inc/checkout/class-cart.php:2173
 apply_filters("wu_cart_get_extra_params")
 ```
 
-Location: inc/checkout/class-cart.php:2255
+Location: inc/checkout/class-cart.php:2262
 
 ---
 ### wu_geolocation_error_message
