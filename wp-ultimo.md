@@ -3434,7 +3434,7 @@ They key should be the signup field ID to search for, while the value should be 
 apply_filters("wu_checkout_get_auto_submittable_fields")
 ```
 
-Location: inc/checkout/class-checkout.php:410
+Location: inc/checkout/class-checkout.php:417
 
 ---
 ### wu_before_handle_order_submission
@@ -3445,7 +3445,7 @@ Location: inc/checkout/class-checkout.php:410
 do_action("wu_before_handle_order_submission")
 ```
 
-Location: inc/checkout/class-checkout.php:464
+Location: inc/checkout/class-checkout.php:471
 
 ---
 ### wu_after_handle_order_submission
@@ -3456,7 +3456,7 @@ Location: inc/checkout/class-checkout.php:464
 do_action("wu_after_handle_order_submission")
 ```
 
-Location: inc/checkout/class-checkout.php:480
+Location: inc/checkout/class-checkout.php:487
 
 ---
 ### wu_cart_parameters
@@ -3467,7 +3467,7 @@ Location: inc/checkout/class-checkout.php:480
 apply_filters("wu_cart_parameters")
 ```
 
-Location: inc/checkout/class-checkout.php:548
+Location: inc/checkout/class-checkout.php:555
 
 ---
 ### wu_checkout_after_process_order
@@ -3480,7 +3480,7 @@ Added in 2.0.9
 do_action("wu_checkout_after_process_order", \WP_Ultimo\Checkout\Checkout $checkout, \WP_Ultimo\Checkout\Cart $cart)
 ```
 
-Location: inc/checkout/class-checkout.php:852
+Location: inc/checkout/class-checkout.php:859
 
 #### Arguments
 * `$checkout` (_\WP_Ultimo\Checkout\Checkout_) The checkout object instance.
@@ -3502,7 +3502,7 @@ Added in 2.0.0
 do_action("wu_maybe_create_customer", \WP_Ultimo\Checkout\Customer $customer, \WP_Ultimo\Checkout\Checkout $this)
 ```
 
-Location: inc/checkout/class-checkout.php:1020
+Location: inc/checkout/class-checkout.php:1027
 
 #### Arguments
 * `$customer` (_\WP_Ultimo\Checkout\Customer_) The customer that was maybe created.
@@ -3519,7 +3519,7 @@ Added in 2.0.0
 do_action("wu_handle_customer_meta_fields", array $meta_repository, \WP_Ultimo\Checkout\Customer $customer, \WP_Ultimo\Checkout\Checkout $this)
 ```
 
-Location: inc/checkout/class-checkout.php:1074
+Location: inc/checkout/class-checkout.php:1081
 
 #### Arguments
 * `$meta_repository` (_array_) The list of meta fields, key =&gt; value structured.
@@ -3537,7 +3537,7 @@ Added in 2.0.4
 do_action("wu_handle_user_meta_fields", array $meta_repository, \WP_User $user, \WP_Ultimo\Checkout\Customer $customer, \WP_Ultimo\Checkout\Checkout $this)
 ```
 
-Location: inc/checkout/class-checkout.php:1108
+Location: inc/checkout/class-checkout.php:1115
 
 #### Arguments
 * `$meta_repository` (_array_) The list of meta fields, key =&gt; value structured.
@@ -3556,7 +3556,7 @@ Added in 2.0.4
 apply_filters("wu_checkout_template_id")
 ```
 
-Location: inc/checkout/class-checkout.php:1264
+Location: inc/checkout/class-checkout.php:1271
 
 #### Arguments
 *None.*
@@ -3574,7 +3574,7 @@ Added in 2.0.0
 apply_filters("wu_get_checkout_variables", array $variables, \WP_Ultimo\Checkout\Checkout $this)
 ```
 
-Location: inc/checkout/class-checkout.php:1600
+Location: inc/checkout/class-checkout.php:1607
 
 #### Arguments
 * `$variables` (_array_) Localized variables.
@@ -3592,7 +3592,7 @@ Location: inc/checkout/class-checkout.php:1600
 apply_filters("wu_checkout_validation_rules")
 ```
 
-Location: inc/checkout/class-checkout.php:1644
+Location: inc/checkout/class-checkout.php:1651
 
 ---
 ### wu_checkout_done
@@ -3603,7 +3603,7 @@ Add the additional required fields.
 do_action("wu_checkout_done")
 ```
 
-Location: inc/checkout/class-checkout.php:2021
+Location: inc/checkout/class-checkout.php:2028
 
 ---
 ### wp_ultimo_registration
@@ -3616,7 +3616,7 @@ Deprecated in 2.0.0 **
 do_action("wp_ultimo_registration")
 ```
 
-Location: inc/checkout/class-checkout.php:2039
+Location: inc/checkout/class-checkout.php:2046
 
 ---
 ### wp_ultimo_redirect_url_after_signup
@@ -3631,7 +3631,7 @@ Added in 1.1.3
 apply_filters("wp_ultimo_redirect_url_after_signup")
 ```
 
-Location: inc/checkout/class-checkout.php:2080
+Location: inc/checkout/class-checkout.php:2087
 
 #### Arguments
 *None.*
@@ -3645,7 +3645,7 @@ Location: inc/checkout/class-checkout.php:2080
 apply_filters("wu_checkout_custom_css")
 ```
 
-Location: inc/checkout/class-checkout.php:2184
+Location: inc/checkout/class-checkout.php:2191
 
 ---
 ### wu_maybe_redirect_to_admin_panel_exclusion_list
