@@ -4325,7 +4325,7 @@ Location: inc/models/class-discount-code.php:769
 apply_filters("wu_checkout_form_meta_fields_list")
 ```
 
-Location: inc/models/class-checkout-form.php:495
+Location: inc/models/class-checkout-form.php:503
 
 ---
 ### wu_checkout_form_single_step_template
@@ -4336,7 +4336,7 @@ Location: inc/models/class-checkout-form.php:495
 apply_filters("wu_checkout_form_single_step_template")
 ```
 
-Location: inc/models/class-checkout-form.php:680
+Location: inc/models/class-checkout-form.php:688
 
 ---
 ### wu_checkout_form_multi_step_template
@@ -4347,7 +4347,7 @@ Location: inc/models/class-checkout-form.php:680
 apply_filters("wu_checkout_form_multi_step_template")
 ```
 
-Location: inc/models/class-checkout-form.php:830
+Location: inc/models/class-checkout-form.php:838
 
 ---
 ### wu_checkout_form_finish_checkout_form_fields
@@ -4358,7 +4358,7 @@ Add Checkout step
 apply_filters("wu_checkout_form_finish_checkout_form_fields")
 ```
 
-Location: inc/models/class-checkout-form.php:1336
+Location: inc/models/class-checkout-form.php:1344
 
 ---
 ### wu_checkout_form_membership_change_form_fields
@@ -4369,7 +4369,7 @@ Get variations for selector
 apply_filters("wu_checkout_form_membership_change_form_fields")
 ```
 
-Location: inc/models/class-checkout-form.php:1556
+Location: inc/models/class-checkout-form.php:1564
 
 ---
 ### wu_checkout_form_add_new_site_form_fields
@@ -4380,7 +4380,7 @@ Location: inc/models/class-checkout-form.php:1556
 apply_filters("wu_checkout_form_add_new_site_form_fields")
 ```
 
-Location: inc/models/class-checkout-form.php:1680
+Location: inc/models/class-checkout-form.php:1688
 
 ---
 ### wu_should_use_saved_currency
