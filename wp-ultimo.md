@@ -5522,7 +5522,7 @@ Deprecated in 2.0.0 *Use 'wu_sso_enabled' instead.*
 apply_filters("mercator.sso.enabled")
 ```
 
-Location: inc/sso/class-sso.php:87
+Location: inc/sso/class-sso.php:86
 
 ---
 ### wu_sso_enabled
@@ -5537,7 +5537,7 @@ Added in 2.0.11
 apply_filters("wu_sso_enabled", bool $enabled)
 ```
 
-Location: inc/sso/class-sso.php:101
+Location: inc/sso/class-sso.php:100
 
 #### Arguments
 * `$enabled` (_bool_) Should SSO be enabled? True for on, false-ish for off.
@@ -5558,7 +5558,7 @@ Added in 2.0.0
 do_action("wu_sso_loaded", self $this)
 ```
 
-Location: inc/sso/class-sso.php:291
+Location: inc/sso/class-sso.php:290
 
 #### Arguments
 * `$this` (_self_) The SSO class.
@@ -5572,7 +5572,7 @@ Adds the SSO scripts to the head of the front-end and the login page to try to p
 do_action("wu_sso_loaded_on_init")
 ```
 
-Location: inc/sso/class-sso.php:309
+Location: inc/sso/class-sso.php:308
 
 #### Arguments
 *None.*
@@ -5588,7 +5588,7 @@ Added in 2.0.11
 do_action("wu_sso_handle")
 ```
 
-Location: inc/sso/class-sso.php:437
+Location: inc/sso/class-sso.php:436
 
 #### Arguments
 *None.*
@@ -5602,7 +5602,7 @@ Location: inc/sso/class-sso.php:437
 do_action("wu_sso_handle_{$action}")
 ```
 
-Location: inc/sso/class-sso.php:439
+Location: inc/sso/class-sso.php:438
 
 ---
 ### wu_sso_get_strategy
@@ -5613,7 +5613,7 @@ Location: inc/sso/class-sso.php:439
 apply_filters("wu_sso_get_strategy")
 ```
 
-Location: inc/sso/class-sso.php:854
+Location: inc/sso/class-sso.php:853
 
 ---
 ### wu_sso_salt
@@ -5624,7 +5624,7 @@ Location: inc/sso/class-sso.php:854
 apply_filters("wu_sso_salt")
 ```
 
-Location: inc/sso/class-sso.php:973
+Location: inc/sso/class-sso.php:972
 
 ---
 ### wu_sso_cache
@@ -5635,7 +5635,7 @@ Location: inc/sso/class-sso.php:973
 apply_filters("wu_sso_cache")
 ```
 
-Location: inc/sso/class-sso.php:991
+Location: inc/sso/class-sso.php:992
 
 ---
 ### wu_sso_server_request
@@ -5646,7 +5646,7 @@ Location: inc/sso/class-sso.php:991
 apply_filters("wu_sso_server_request")
 ```
 
-Location: inc/sso/class-sso.php:1009
+Location: inc/sso/class-sso.php:1010
 
 ---
 ### wu_sso_logger
@@ -5657,7 +5657,7 @@ Location: inc/sso/class-sso.php:1009
 apply_filters("wu_sso_logger")
 ```
 
-Location: inc/sso/class-sso.php:1023
+Location: inc/sso/class-sso.php:1024
 
 ---
 ### wu_sso_get_server
@@ -5668,7 +5668,7 @@ Location: inc/sso/class-sso.php:1023
 apply_filters("wu_sso_get_server")
 ```
 
-Location: inc/sso/class-sso.php:1067
+Location: inc/sso/class-sso.php:1068
 
 ---
 ### wu_sso_site_allowed_domains
@@ -5679,7 +5679,7 @@ Location: inc/sso/class-sso.php:1067
 apply_filters("wu_sso_site_allowed_domains")
 ```
 
-Location: inc/sso/class-sso.php:1106
+Location: inc/sso/class-sso.php:1107
 
 ---
 ### wu_sso_get_broker
@@ -5690,7 +5690,7 @@ Location: inc/sso/class-sso.php:1106
 apply_filters("wu_sso_get_broker")
 ```
 
-Location: inc/sso/class-sso.php:1133
+Location: inc/sso/class-sso.php:1134
 
 ---
 ### wu_sso_get_url_path
@@ -5701,7 +5701,7 @@ Location: inc/sso/class-sso.php:1133
 apply_filters("wu_sso_get_url_path")
 ```
 
-Location: inc/sso/class-sso.php:1178
+Location: inc/sso/class-sso.php:1179
 
 ---
 ### wu_page_wizard_after_title
